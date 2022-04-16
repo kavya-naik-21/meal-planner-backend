@@ -2,10 +2,25 @@
   "name": "meal-planner-backend",
   "version": "1.0.0",
   "description": "This is the backend for meal-planner app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavya-naik-21/meal-planner-backend.git"
   },
   "author": "Kavya Naik",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "mongoose": "^5.13.14",
+    "nodemon": "^2.0.15"
+  }
 }
