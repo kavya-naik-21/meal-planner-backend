@@ -1,0 +1,11 @@
+{
+  "name": "meal-planner-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for meal-planner app",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Kavya Naik",
+  "license": "ISC"
+}
