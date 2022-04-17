@@ -26,3 +26,4 @@ app.get('/',(req,res,next)=>{
 })
 
 app.use('/meals',mealsRoutes)
+
