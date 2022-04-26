@@ -6,7 +6,8 @@ const cors = require("cors")
 const connection = require('./db')
 
 
-const mealsRoutes=require('./routes/mealRoute')
+const mealsRoutes = require('./routes/mealRoute')
+const usersRoutes = require('./routes/userRoute')
 
 
 const app = express()
@@ -21,9 +22,11 @@ const PORT = process.env.PORT || 9900;
 
 app.listen(process.env.PORT, console.log("App is listening at port", +PORT))
 
-app.get('/',(req,res,next)=>{
+app.get('/', (req, res, next) => {
     res.send('Welcome to Meal - Planner app')
 })
 
-app.use('/meals',mealsRoutes)
+app.use('/meals', mealsRoutes)
+
+app.use('/users', usersRoutes)
 
