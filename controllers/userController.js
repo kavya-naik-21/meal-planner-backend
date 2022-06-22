@@ -8,6 +8,7 @@ const register=(req,res,next)=>{
         name:req.body.name,
         email:req.body.email,
         phoneNum:req.body.phoneNum,
+        password:req.body.password
     })
     _user.save()
     .then(response=>{

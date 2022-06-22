@@ -12,6 +12,9 @@ const userSchema = new Schema({
     },
     phoneNum: {
         type: String
+    },
+    password: {
+        type: String
     }
 })
 
